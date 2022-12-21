@@ -1,0 +1,311 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*Formato del contenedor principal*/
+#container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /*min-height: 800px;*/
+}
+/****************************  inicio de header    **************************************/
+
+/*usamos Flexbox en el header para alinear los elementos*/
+#header{
+    display: flex;/* damos propiedad Flex al contenedor header*/
+    flex-direction: row;/* para que se comporte como fila*/
+    flex-wrap: wrap;/*Para generar un envoltura y nada se salga*/
+    align-items: center;/*Centra el contenido de manera vertical*/
+    height:80px; /*altura del header*/
+    background: rgb(128, 198, 180);
+    justify-content:space-between;
+
+}  
+
+#header img{
+    flex-grow: 1;
+    flex-basis: 30%;/*Damos el tamañño que ocupara en el header*/
+    width: 90px;
+    margin-left: 3px;
+    margin-top: 3px;
+
+    align-items: center;
+
+} /**************  FIN HEADER  ***************/
+
+/**********************************  INICIO MENU ********************************************/
+#menu{
+    flex-grow: 1; /*Espacios entre cada menu*/
+    flex-basis: 20%;
+    height: 100%;
+    padding-right: 10px;
+
+}
+#menu >ul{
+    display: flex; /*Para manipular con flex box*/
+    flex-direction: row; /*direcciona el contenido en tipo FILA*/
+    flex-wrap: wrap; /*Crea un contenedor para que nada de elementos se salga del Wrap*/
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    justify-content: right;
+}
+#menu a{
+    text-decoration: none;
+    color:rgb(12, 98, 25);
+    padding: 10px;
+    transition: all 300ms;  
+    font-size: 20px; 
+    font-weight: 300;
+}
+#menu a:hover{
+    background: rgb(7, 148, 64);
+    color: white;
+    
+} 
+/********************  FIN MENU  **********************/
+
+/********************  INICIO DE LOS CONTENIDOS  **********************/
+.inicial{
+    margin-top: -28px;
+    width: 100%; 
+    height: 700px;
+    background: url("../image/ima1.webp");
+    background-size: cover;
+    background-position: center;
+}
+.inicial h1{
+
+    padding-top: 20px ;
+    color:rgb(12, 98, 25);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.inicial p{
+    padding-right: 200px;
+    padding-left: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+/*************************  FIN DE PRIMER CONTENIDO ************************/
+
+/***********  SEGUNDO CONTENIDO *****************/
+#section{
+    display: flex;
+    width: 100%; 
+    height: 400px;
+    /*background: rgb(228, 224, 224);*/
+   /* background: url(/image/pattern.png);*/
+   flex-wrap: wrap;
+   background: rgb(128, 198, 180);
+
+}
+#section .info h2{
+    color:rgb(12, 98, 25);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0px;
+    margin-bottom: 50px;
+    padding-top: 60px;
+
+}
+#section .info p{
+    padding-left: 200px;
+    padding-right:200px ;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+  /*********************** inicio de las cards **************************/
+  #servicios-container{
+    display: flex;
+    flex-flow: row wrap; /*acomoda el contenido en linea y crea un contenedor wrap, debe agruparlo conforme al espacio*/
+    justify-content: space-between ;
+    flex-basis: 80%;/*Da el tamaño a las cajas para que se ajusten al contenedor*/
+}
+/* formato a la clase projects que contiene las imagenes y texto*/
+.servicios{
+    flex-grow: 1; /*indica el tamaño que debe usar el contenido*/
+    flex-basis: 350px;/*tamaño de la caja*/
+    margin-bottom: 25px;
+    margin-right: 10px;
+    padding-top: 50px;
+
+
+}
+.servicios img{
+    /*width: 50%;/*Ocupará el 200% de la caja*/
+    width: 200px;
+    height: 200px;
+    transition: all 300ms;
+}
+/* Tansformar la imagen al pasar el cursor, aumento de tamaño */
+.servicios img:hover{
+    transform: scale(1.30);
+}
+.servicios-info{
+    display: block;
+    padding: 40px;
+}
+.servicios-info img{
+    display: block;
+    margin-bottom: 30px;
+    vertical-align: text-bottom; 
+    margin-left: 70px;
+}
+.servicios-info a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    transition: all 300ms;
+}
+.servicios-info a:hover{
+   font-weight: bold;
+   color:green;
+}
+
+.servicios-info p{
+    padding-top: 10px;
+    font-size: 16px;
+    color:gray;
+}
+.servicios-info .precio{
+    padding-top: 10px;
+    font-size: 26px;
+    color:rgb(12, 98, 25);
+    font-weight: bold;
+}
+/********************  FIN CONTENT  *********************/
+
+/******************************* INICIO DE SECTION DESCUENTO ************************************/
+#section-descuento{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background: url(../image/dentista5.PNG);
+    background-size: cover;
+    background-position: center;
+}
+#section-descuento .info-descuento{
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#section-descuento .info-descuento h2{
+    color:rgb(12, 98, 25);
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+#section-descuento .info-descuento p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+/************** Fin SECTION DESCUENTO ********************/
+
+/********************************** INICIO FOOTER *************************/
+#footer{
+    display: flex;/*contenedor flexbox*/
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    background: rgb(128, 198, 180);
+    padding-bottom: 0px;
+}
+#footer .info{
+    display: flex;/*contenedor flexbox*/
+    justify-content: space-around;
+    height: 320px;
+
+}
+#footer .informacion{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#footer .informacion a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+}
+#footer .informacion a:hover{
+    color: darkgreen;
+    font-size: 22px;
+}
+#footer .sociales{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+#footer .sociales img{
+    transition: all 300ms;
+}
+#footer .sociales img:hover{
+    transform: scale(1.30);
+}
+#footer .location{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+#footer .location p{
+   justify-content: center;
+}
+#footer .sociales img{
+    width: 10%;
+}
+#footer .facebook,.twitter,.instagram{
+    padding-top: 30px;
+}
+
+#footer iframe{
+    width: 90%;
+    height: 200px;
+    margin-left: 30px;
+}
+#footer .location p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-weight: bold;
+}
+.pie{
+    display: flex;/*contenedor flexbox*/
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: rgb(128, 198, 180);
+
+
+}
+
+/*******/
+

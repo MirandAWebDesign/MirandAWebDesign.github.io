@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../proyectos/css/styleContacto.css"/>
+    <title>Dental Clinic</title>
+</head>
+<body>
+ 
+    <!-- CREAR CONTENEDOR PRINCIPAL -->
+    <div id="container">
+        <header id="header"><!-- INICIO DEL HEADER -->
+              <div class="logo">
+                 <img src="../proyectos/image/logo.PNG"/>
+              </div>
+                  <!-- INICIO DEL MENU -->
+                     <nav id="menu">
+                        <ul>
+                            <li><a href="../proyectos/index.html">Inicio</a></li>
+                            <li><a href="#">Mis Citas</a></li>
+                            <li><a href="../proyectos/login.html">Login</a></li>
+                            <li><a href="../proyectos/servicios.html">Servicios</a></li>
+                            <li><a href="#">Social</a></li>
+                            <li><a href="../proyectos/contacto.html">Contacto</a></li>
+                          </ul>
+                     </nav>
+                  <!-- FIN DEL MENU -->
+        </header>  <!-- Fin header  -->  
+           <!-- INICIO DE CONTENIDO -->              
+                <div id="principal">
+                   <h1>Contáctanos</h1>
+                   <div class="contacto">
+                    <form id="formulario">
+                       
+                    <div id="contacto">
+                        <h2>Ingresa tus Datos</h2>
+                        <!--Etiqueta legend-->
+                        <legend>Datos personales</legend> <br><br>
+                        <!--Etiqueta label-->
+                        <label>Nombre Completo: </label>
+                        <!--Etiqueta input tipo texto-->
+                        <input name='nombre' type='text'/>
+                        <br><br>
+                        <label>Genero: </label>
+                        <!--Etiqueta select-->
+                        <select name="select">
+                            <!--Etiqueta option-->
+                            <option value="value1">Másculino</option> 
+                            <option value="value2" selected>Femenino</option>
+                            <option value="value2" selected>Otro</option>
+                        </select><br><br>
+                        <label>Edad: </label>
+                        <!--Etiqueta input tipo checkbox-->
+                        <input type='checkbox' name='edad' value='15-19' /> 15-19
+                        <input type='checkbox' name='edad' value='20-39' /> 20-39
+                        <input type='checkbox' name='edad' value='40-59' /> 40-59
+                        <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>
+                        <label>Email: </label>
+                        <!--Etiqueta input tipo email-->
+                        <input name='nombre' type='email'/><br><br>
+                        <label>Alcaldía: </label>
+                        <!--Etiqueta select-->
+                        <select id="dino-select">
+                        <!--Etiqueta optgroup-->
+                        <optgroup label="Alcaldía">
+                            <!--Etiqueta option-->
+                            <option>Iztapalapa</option>
+                            <option>Coyoacán</option>
+                            <option>Miguel Hidalgo</option>
+                            <option>Benito Juárez</option>
+                            <option>Iztacalco</option>
+                            <option>Cuauhtemóc</option>
+                        </optgroup>
+                        </select><br><br>
+                        <label>Teléfono de contacto: </label>
+                      <input type="tel" name="telefono" placeholder="(a 10dígitos) Número">
+                      <br><br>
+                    
+                    
+                    <!--Etiqueta textarea-->
+                   <textarea name="textarea" rows="10" cols="50">Escribe tus comentarios</textarea>
+                   <br><br>
+                   <input type="submit" value="Enviar" />
+                   <br><br>
+            
+                </div><!-- FIN CONTENIDO -->
+             
+         <!-- Inicio de FOOTER  -->
+                                        
+         <footer id="footer">
+            <div class="info">
+                <div class="informacion">
+                    <h2><a href="#">DENTISTA CLINIC</a></h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="sociales">
+                    <div class="facebook">
+                        <a href="#"><img src="../proyectos/image/f1.png"></a>
+                    </div>
+                    <div class="twitter">
+                        <a href="#"><img src="../proyectos/image/t1.png"></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="#"><img src="../proyectos/image/i1.png"></a>
+                    </div>
+                </div>
+                <div class="location">
+                    <p>¿Donde Estamos?</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15062.136528450697!2d-99.156826!3d19.30261525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce004244d437d1%3A0x94d7c1bcea64acc3!2sGran%20Sur!5e0!3m2!1ses-419!2smx!4v1668456896809!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                       
+                </div>
+            </div>
+            <div class="pie">
+                Miranda Web Todos los derechos Reservados &copy;
+            </div>
+         </footer>
+     
+    </div> <!-- FIN DE CONTENEDOR PRINCIPAL --> 
+
+
+    
+</body>
+</html>

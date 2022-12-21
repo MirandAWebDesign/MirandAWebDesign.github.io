@@ -1,0 +1,196 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*Formato del contenedor principal*/
+#container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    /*min-height: 800px;*/
+}
+
+/****************************  inicio de header    **************************************/
+
+/*usamos Flexbox en el header para alinear los elementos*/
+#header{
+    display: flex;/* damos propiedad Flex al contenedor header*/
+    flex-direction: row;/* para que se comporte como fila*/
+    flex-wrap: wrap;/*Para generar un envoltura y nada se salga*/
+    align-items: center;/*Centra el contenido de manera vertical*/
+    height:80px; /*altura del header*/
+    background: rgb(128, 198, 180);
+    justify-content:space-between;
+
+}  
+
+#header img{
+    flex-grow: 1;
+    flex-basis: 30%;/*Damos el tamañño que ocupara en el header*/
+    width: 90px;
+    margin-left: 3px;
+    margin-top: 3px;
+
+    align-items: center;
+
+} /**************  FIN HEADER  ***************/
+
+/**********************************  INICIO MENU ********************************************/
+#menu{
+    flex-grow: 1; /*Espacios entre cada menu*/
+    flex-basis: 20%;
+    height: 100%;
+    padding-right: 10px;
+
+}
+#menu >ul{
+    display: flex; /*Para manipular con flex box*/
+    flex-direction: row; /*direcciona el contenido en tipo FILA*/
+    flex-wrap: wrap; /*Crea un contenedor para que nada de elementos se salga del Wrap*/
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    justify-content: right;
+}
+#menu a{
+    text-decoration: none;
+    color:rgb(12, 98, 25);
+    padding: 10px;
+    transition: all 300ms;  
+    font-size: 20px; 
+    font-weight: 300;
+}
+#menu a:hover{
+    background: rgb(7, 148, 64);
+    color: white;
+    
+} 
+/********************  FIN MENU  **********************/
+
+/********************  INICIO DE LOS CONTENIDO  **********************/
+#principal{
+    width: 100%;
+    height: 720px;
+    background: url(../image/dentista5.PNG);
+    background-size: cover;
+    background-position: center;
+    margin-top: -26px;
+
+}
+#principal h1{
+    width: 100%;
+    height: 85px;
+    /*background: rgb(241, 236, 236);*/
+    background: white;
+    line-height: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color:darkgreen;
+    font-weight: bold;
+}
+#contacto{
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+/********************************** INICIO FOOTER *************************/
+#footer{
+    display: flex;/*contenedor flexbox*/
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    background: rgb(128, 198, 180);
+    padding-bottom: 0px;
+}
+#footer .info{
+    display: flex;/*contenedor flexbox*/
+    justify-content: space-around;
+    height: 320px;
+
+}
+#footer .informacion{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#footer .informacion a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+}
+#footer .informacion a:hover{
+    color: darkgreen;
+    font-size: 22px;
+}
+#footer .sociales{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+#footer .sociales img{
+    transition: all 300ms;
+}
+#footer .sociales img:hover{
+    transform: scale(1.30);
+}
+#footer .location{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+}
+#footer .location p{
+   justify-content: center;
+}
+#footer .sociales img{
+    width: 10%;
+}
+#footer .facebook,.twitter,.instagram{
+    padding-top: 30px;
+}
+
+#footer iframe{
+    width: 90%;
+    height: 200px;
+    margin-left: 30px;
+}
+#footer .location p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    font-weight: bold;
+}
+.pie{
+    display: flex;/*contenedor flexbox*/
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: rgb(128, 198, 180);
+
+
+}
+
+/*******/
+
